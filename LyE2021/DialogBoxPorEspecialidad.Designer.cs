@@ -162,7 +162,7 @@ namespace LyE2021
             this.cSemestre});
             this.lvEspecialidad.Font = new System.Drawing.Font("Century Schoolbook", 7.8F);
             this.lvEspecialidad.HideSelection = false;
-            this.lvEspecialidad.Location = new System.Drawing.Point(38, 258);
+            this.lvEspecialidad.Location = new System.Drawing.Point(38, 259);
             this.lvEspecialidad.Name = "lvEspecialidad";
             this.lvEspecialidad.Size = new System.Drawing.Size(788, 387);
             this.lvEspecialidad.TabIndex = 8;
@@ -172,30 +172,37 @@ namespace LyE2021
             // cNumero
             // 
             this.cNumero.Text = "N";
+            this.cNumero.Width = 26;
             // 
             // cMatricula
             // 
             this.cMatricula.Text = "Matricula";
+            this.cMatricula.Width = 137;
             // 
             // cPaterno
             // 
             this.cPaterno.Text = "Apellido Paterno";
+            this.cPaterno.Width = 138;
             // 
             // cMaterno
             // 
             this.cMaterno.Text = "Apellido Materno";
+            this.cMaterno.Width = 141;
             // 
             // cNombre
             // 
             this.cNombre.Text = "Nombre";
+            this.cNombre.Width = 129;
             // 
             // cEspecialidad
             // 
             this.cEspecialidad.Text = "Especialidad";
+            this.cEspecialidad.Width = 106;
             // 
             // cSemestre
             // 
             this.cSemestre.Text = "Semestre";
+            this.cSemestre.Width = 94;
             // 
             // DialogBoxPorEspecialidad
             // 
