@@ -44,6 +44,18 @@ namespace LyE2021
             this.btn12 = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.lvSemestre = new System.Windows.Forms.ListView();
+            this.cNumeros = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cMatricula = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cPaterno = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cMaterno = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cEspecialidad = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cSemestre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cServicio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cPlaticando = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cResidencias = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cCertificado = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cToefl = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // label1
@@ -68,6 +80,7 @@ namespace LyE2021
             this.btn1.TabIndex = 1;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = false;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // btn2
             // 
@@ -80,6 +93,7 @@ namespace LyE2021
             this.btn2.TabIndex = 2;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = false;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btn3
             // 
@@ -92,6 +106,7 @@ namespace LyE2021
             this.btn3.TabIndex = 3;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = false;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // btn4
             // 
@@ -104,6 +119,7 @@ namespace LyE2021
             this.btn4.TabIndex = 4;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = false;
+            this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
             // btn5
             // 
@@ -116,6 +132,7 @@ namespace LyE2021
             this.btn5.TabIndex = 5;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = false;
+            this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
             // btn6
             // 
@@ -128,6 +145,7 @@ namespace LyE2021
             this.btn6.TabIndex = 6;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = false;
+            this.btn6.Click += new System.EventHandler(this.btn6_Click);
             // 
             // btn7
             // 
@@ -140,6 +158,7 @@ namespace LyE2021
             this.btn7.TabIndex = 7;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = false;
+            this.btn7.Click += new System.EventHandler(this.btn7_Click);
             // 
             // btn8
             // 
@@ -152,6 +171,7 @@ namespace LyE2021
             this.btn8.TabIndex = 8;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = false;
+            this.btn8.Click += new System.EventHandler(this.btn8_Click);
             // 
             // btn9
             // 
@@ -164,6 +184,7 @@ namespace LyE2021
             this.btn9.TabIndex = 9;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = false;
+            this.btn9.Click += new System.EventHandler(this.btn9_Click);
             // 
             // btn10
             // 
@@ -176,6 +197,7 @@ namespace LyE2021
             this.btn10.TabIndex = 10;
             this.btn10.Text = "10";
             this.btn10.UseVisualStyleBackColor = false;
+            this.btn10.Click += new System.EventHandler(this.btn10_Click);
             // 
             // btn11
             // 
@@ -188,6 +210,7 @@ namespace LyE2021
             this.btn11.TabIndex = 11;
             this.btn11.Text = "11";
             this.btn11.UseVisualStyleBackColor = false;
+            this.btn11.Click += new System.EventHandler(this.btn11_Click);
             // 
             // btn12
             // 
@@ -200,6 +223,7 @@ namespace LyE2021
             this.btn12.TabIndex = 12;
             this.btn12.Text = "12";
             this.btn12.UseVisualStyleBackColor = false;
+            this.btn12.Click += new System.EventHandler(this.btn12_Click);
             // 
             // btnExit
             // 
@@ -212,9 +236,23 @@ namespace LyE2021
             this.btnExit.TabIndex = 13;
             this.btnExit.Text = "Salir";
             this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // lvSemestre
             // 
+            this.lvSemestre.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.cNumeros,
+            this.cMatricula,
+            this.cPaterno,
+            this.cMaterno,
+            this.cNombre,
+            this.cEspecialidad,
+            this.cSemestre,
+            this.cServicio,
+            this.cPlaticando,
+            this.cResidencias,
+            this.cCertificado,
+            this.cToefl});
             this.lvSemestre.HideSelection = false;
             this.lvSemestre.Location = new System.Drawing.Point(38, 265);
             this.lvSemestre.Name = "lvSemestre";
@@ -222,6 +260,54 @@ namespace LyE2021
             this.lvSemestre.TabIndex = 14;
             this.lvSemestre.UseCompatibleStateImageBehavior = false;
             this.lvSemestre.View = System.Windows.Forms.View.Details;
+            // 
+            // cNumeros
+            // 
+            this.cNumeros.Text = "N";
+            // 
+            // cMatricula
+            // 
+            this.cMatricula.Text = "Matricula";
+            // 
+            // cPaterno
+            // 
+            this.cPaterno.Text = "Apellido Paterno";
+            // 
+            // cMaterno
+            // 
+            this.cMaterno.Text = "Apellido Materno";
+            // 
+            // cNombre
+            // 
+            this.cNombre.Text = "Nombre";
+            // 
+            // cEspecialidad
+            // 
+            this.cEspecialidad.Text = "Especialidad";
+            // 
+            // cSemestre
+            // 
+            this.cSemestre.Text = "Semestre";
+            // 
+            // cServicio
+            // 
+            this.cServicio.Text = "Servicio Social";
+            // 
+            // cPlaticando
+            // 
+            this.cPlaticando.Text = "Precticas Profesionales";
+            // 
+            // cResidencias
+            // 
+            this.cResidencias.Text = "Residencias Profesionales";
+            // 
+            // cCertificado
+            // 
+            this.cCertificado.Text = "Certificado";
+            // 
+            // cToefl
+            // 
+            this.cToefl.Text = "TEOFL";
             // 
             // DialogBoxPorSemestre
             // 
@@ -248,6 +334,7 @@ namespace LyE2021
             this.Name = "DialogBoxPorSemestre";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Busqueda por Semestre";
+            this.Load += new System.EventHandler(this.DialogBoxPorSemestre_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -270,5 +357,17 @@ namespace LyE2021
         private System.Windows.Forms.Button btn12;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.ListView lvSemestre;
+        private System.Windows.Forms.ColumnHeader cNumeros;
+        private System.Windows.Forms.ColumnHeader cMatricula;
+        private System.Windows.Forms.ColumnHeader cPaterno;
+        private System.Windows.Forms.ColumnHeader cMaterno;
+        private System.Windows.Forms.ColumnHeader cNombre;
+        private System.Windows.Forms.ColumnHeader cEspecialidad;
+        private System.Windows.Forms.ColumnHeader cSemestre;
+        private System.Windows.Forms.ColumnHeader cServicio;
+        private System.Windows.Forms.ColumnHeader cPlaticando;
+        private System.Windows.Forms.ColumnHeader cResidencias;
+        private System.Windows.Forms.ColumnHeader cCertificado;
+        private System.Windows.Forms.ColumnHeader cToefl;
     }
 }

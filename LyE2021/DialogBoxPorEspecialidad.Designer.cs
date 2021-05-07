@@ -45,6 +45,11 @@ namespace LyE2021
             this.cNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cEspecialidad = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cSemestre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cServicio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cPracticas = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cResidencias = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cCertificacion = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cTOEFL = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // lbIntro
@@ -159,7 +164,12 @@ namespace LyE2021
             this.cMaterno,
             this.cNombre,
             this.cEspecialidad,
-            this.cSemestre});
+            this.cSemestre,
+            this.cServicio,
+            this.cPracticas,
+            this.cResidencias,
+            this.cCertificacion,
+            this.cTOEFL});
             this.lvEspecialidad.Font = new System.Drawing.Font("Century Schoolbook", 7.8F);
             this.lvEspecialidad.HideSelection = false;
             this.lvEspecialidad.Location = new System.Drawing.Point(38, 259);
@@ -204,6 +214,26 @@ namespace LyE2021
             this.cSemestre.Text = "Semestre";
             this.cSemestre.Width = 94;
             // 
+            // cServicio
+            // 
+            this.cServicio.Text = "Servicio Social";
+            // 
+            // cPracticas
+            // 
+            this.cPracticas.Text = "Practicas Profesionales";
+            // 
+            // cResidencias
+            // 
+            this.cResidencias.Text = "Residencias Profecionales";
+            // 
+            // cCertificacion
+            // 
+            this.cCertificacion.Text = "Certificacion";
+            // 
+            // cTOEFL
+            // 
+            this.cTOEFL.Text = "TOEFL";
+            // 
             // DialogBoxPorEspecialidad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -223,6 +253,7 @@ namespace LyE2021
             this.Name = "DialogBoxPorEspecialidad";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Busqueda por Especialidad";
+            this.Load += new System.EventHandler(this.DialogBoxPorEspecialidad_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -246,5 +277,10 @@ namespace LyE2021
         private System.Windows.Forms.ColumnHeader cNombre;
         private System.Windows.Forms.ColumnHeader cEspecialidad;
         private System.Windows.Forms.ColumnHeader cSemestre;
+        private System.Windows.Forms.ColumnHeader cServicio;
+        private System.Windows.Forms.ColumnHeader cPracticas;
+        private System.Windows.Forms.ColumnHeader cResidencias;
+        private System.Windows.Forms.ColumnHeader cCertificacion;
+        private System.Windows.Forms.ColumnHeader cTOEFL;
     }
 }
