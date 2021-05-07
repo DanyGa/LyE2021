@@ -35,7 +35,7 @@ namespace LyE2021
         {
             lvSemestre.Items.Clear();
             int x = 6;
-            string p = "1";
+            string b = "1";
             while (a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value != null)
             {
                 string num = a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value.ToString();
@@ -51,7 +51,7 @@ namespace LyE2021
                 string certificaciones = a.ActiveWorkbook.ActiveSheet.Cells(x, 11).Value.ToString();
                 string toefl = a.ActiveWorkbook.ActiveSheet.Cells(x, 12).Value.ToString();
                 ListViewItem lista = new ListViewItem(num);
-                if (semestre == p)
+                if (semestre == b)
                 {
                     lista.SubItems.Add(matricula);
                     lista.SubItems.Add(paterno);
@@ -74,85 +74,7 @@ namespace LyE2021
         {
             lvSemestre.Items.Clear();
             int x = 6;
-            string s = "2";
-            while (a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value != null)
-            {
-                string num = a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value.ToString();
-                string matricula = a.ActiveWorkbook.ActiveSheet.Cells(x, 2).Value.ToString();
-                string paterno = a.ActiveWorkbook.ActiveSheet.Cells(x, 3).Value.ToString();
-                string materno = a.ActiveWorkbook.ActiveSheet.Cells(x, 4).Value.ToString();
-                string nombre = a.ActiveWorkbook.ActiveSheet.Cells(x, 5).Value.ToString();
-                string especialidad = a.ActiveWorkbook.ActiveSheet.Cells(x, 6).Value.ToString();
-                string semestre = a.ActiveWorkbook.ActiveSheet.Cells(x, 7).Value.ToString();
-                string servicio = a.ActiveWorkbook.ActiveSheet.Cells(x, 8).Value.ToString();
-                string practicas = a.ActiveWorkbook.ActiveSheet.Cells(x, 9).Value.ToString();
-                string residencias = a.ActiveWorkbook.ActiveSheet.Cells(x, 10).Value.ToString();
-                string certificaciones = a.ActiveWorkbook.ActiveSheet.Cells(x, 11).Value.ToString();
-                string toefl = a.ActiveWorkbook.ActiveSheet.Cells(x, 12).Value.ToString();
-                ListViewItem lista = new ListViewItem(num);
-                if (semestre == s)
-                {
-                    lista.SubItems.Add(matricula);
-                    lista.SubItems.Add(paterno);
-                    lista.SubItems.Add(materno);
-                    lista.SubItems.Add(nombre);
-                    lista.SubItems.Add(especialidad);
-                    lista.SubItems.Add(semestre);
-                    lista.SubItems.Add(servicio);
-                    lista.SubItems.Add(practicas);
-                    lista.SubItems.Add(residencias);
-                    lista.SubItems.Add(certificaciones);
-                    lista.SubItems.Add(toefl);
-                    lvSemestre.Items.Add(lista);
-                }
-                x++;
-            }
-        }
-
-        private void btn3_Click(object sender, EventArgs e)
-        {
-            lvSemestre.Items.Clear();
-            int x = 6;
-            string t = "3";
-            while (a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value != null)
-            {
-                string num = a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value.ToString();
-                string matricula = a.ActiveWorkbook.ActiveSheet.Cells(x, 2).Value.ToString();
-                string paterno = a.ActiveWorkbook.ActiveSheet.Cells(x, 3).Value.ToString();
-                string materno = a.ActiveWorkbook.ActiveSheet.Cells(x, 4).Value.ToString();
-                string nombre = a.ActiveWorkbook.ActiveSheet.Cells(x, 5).Value.ToString();
-                string especialidad = a.ActiveWorkbook.ActiveSheet.Cells(x, 6).Value.ToString();
-                string semestre = a.ActiveWorkbook.ActiveSheet.Cells(x, 7).Value.ToString();
-                string servicio = a.ActiveWorkbook.ActiveSheet.Cells(x, 8).Value.ToString();
-                string practicas = a.ActiveWorkbook.ActiveSheet.Cells(x, 9).Value.ToString();
-                string residencias = a.ActiveWorkbook.ActiveSheet.Cells(x, 10).Value.ToString();
-                string certificaciones = a.ActiveWorkbook.ActiveSheet.Cells(x, 11).Value.ToString();
-                string toefl = a.ActiveWorkbook.ActiveSheet.Cells(x, 12).Value.ToString();
-                ListViewItem lista = new ListViewItem(num);
-                if (semestre == t)
-                {
-                    lista.SubItems.Add(matricula);
-                    lista.SubItems.Add(paterno);
-                    lista.SubItems.Add(materno);
-                    lista.SubItems.Add(nombre);
-                    lista.SubItems.Add(especialidad);
-                    lista.SubItems.Add(semestre);
-                    lista.SubItems.Add(servicio);
-                    lista.SubItems.Add(practicas);
-                    lista.SubItems.Add(residencias);
-                    lista.SubItems.Add(certificaciones);
-                    lista.SubItems.Add(toefl);
-                    lvSemestre.Items.Add(lista);
-                }
-                x++;
-            }
-        }
-
-        private void btn4_Click(object sender, EventArgs e)
-        {
-            lvSemestre.Items.Clear();
-            int x = 6;
-            string c = "4";
+            string c = "2";
             while (a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value != null)
             {
                 string num = a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value.ToString();
@@ -187,206 +109,11 @@ namespace LyE2021
             }
         }
 
-        private void btn5_Click(object sender, EventArgs e)
+        private void btn3_Click(object sender, EventArgs e)
         {
             lvSemestre.Items.Clear();
             int x = 6;
-            string q = "5";
-            while (a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value != null)
-            {
-                string num = a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value.ToString();
-                string matricula = a.ActiveWorkbook.ActiveSheet.Cells(x, 2).Value.ToString();
-                string paterno = a.ActiveWorkbook.ActiveSheet.Cells(x, 3).Value.ToString();
-                string materno = a.ActiveWorkbook.ActiveSheet.Cells(x, 4).Value.ToString();
-                string nombre = a.ActiveWorkbook.ActiveSheet.Cells(x, 5).Value.ToString();
-                string especialidad = a.ActiveWorkbook.ActiveSheet.Cells(x, 6).Value.ToString();
-                string semestre = a.ActiveWorkbook.ActiveSheet.Cells(x, 7).Value.ToString();
-                string servicio = a.ActiveWorkbook.ActiveSheet.Cells(x, 8).Value.ToString();
-                string practicas = a.ActiveWorkbook.ActiveSheet.Cells(x, 9).Value.ToString();
-                string residencias = a.ActiveWorkbook.ActiveSheet.Cells(x, 10).Value.ToString();
-                string certificaciones = a.ActiveWorkbook.ActiveSheet.Cells(x, 11).Value.ToString();
-                string toefl = a.ActiveWorkbook.ActiveSheet.Cells(x, 12).Value.ToString();
-                ListViewItem lista = new ListViewItem(num);
-                if (semestre == q)
-                {
-                    lista.SubItems.Add(matricula);
-                    lista.SubItems.Add(paterno);
-                    lista.SubItems.Add(materno);
-                    lista.SubItems.Add(nombre);
-                    lista.SubItems.Add(especialidad);
-                    lista.SubItems.Add(semestre);
-                    lista.SubItems.Add(servicio);
-                    lista.SubItems.Add(practicas);
-                    lista.SubItems.Add(residencias);
-                    lista.SubItems.Add(certificaciones);
-                    lista.SubItems.Add(toefl);
-                    lvSemestre.Items.Add(lista);
-                }
-                x++;
-            }
-        }
-
-        private void btn6_Click(object sender, EventArgs e)
-        {
-            lvSemestre.Items.Clear();
-            int x = 6;
-            string se = "6";
-            while (a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value != null)
-            {
-                string num = a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value.ToString();
-                string matricula = a.ActiveWorkbook.ActiveSheet.Cells(x, 2).Value.ToString();
-                string paterno = a.ActiveWorkbook.ActiveSheet.Cells(x, 3).Value.ToString();
-                string materno = a.ActiveWorkbook.ActiveSheet.Cells(x, 4).Value.ToString();
-                string nombre = a.ActiveWorkbook.ActiveSheet.Cells(x, 5).Value.ToString();
-                string especialidad = a.ActiveWorkbook.ActiveSheet.Cells(x, 6).Value.ToString();
-                string semestre = a.ActiveWorkbook.ActiveSheet.Cells(x, 7).Value.ToString();
-                string servicio = a.ActiveWorkbook.ActiveSheet.Cells(x, 8).Value.ToString();
-                string practicas = a.ActiveWorkbook.ActiveSheet.Cells(x, 9).Value.ToString();
-                string residencias = a.ActiveWorkbook.ActiveSheet.Cells(x, 10).Value.ToString();
-                string certificaciones = a.ActiveWorkbook.ActiveSheet.Cells(x, 11).Value.ToString();
-                string toefl = a.ActiveWorkbook.ActiveSheet.Cells(x, 12).Value.ToString();
-                ListViewItem lista = new ListViewItem(num);
-                if (semestre == se)
-                {
-                    lista.SubItems.Add(matricula);
-                    lista.SubItems.Add(paterno);
-                    lista.SubItems.Add(materno);
-                    lista.SubItems.Add(nombre);
-                    lista.SubItems.Add(especialidad);
-                    lista.SubItems.Add(semestre);
-                    lista.SubItems.Add(servicio);
-                    lista.SubItems.Add(practicas);
-                    lista.SubItems.Add(residencias);
-                    lista.SubItems.Add(certificaciones);
-                    lista.SubItems.Add(toefl);
-                    lvSemestre.Items.Add(lista);
-                }
-                x++;
-            }
-        }
-
-        private void btn7_Click(object sender, EventArgs e)
-        {
-            lvSemestre.Items.Clear();
-            int x = 6;
-            string sep = "7";
-            while (a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value != null)
-            {
-                string num = a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value.ToString();
-                string matricula = a.ActiveWorkbook.ActiveSheet.Cells(x, 2).Value.ToString();
-                string paterno = a.ActiveWorkbook.ActiveSheet.Cells(x, 3).Value.ToString();
-                string materno = a.ActiveWorkbook.ActiveSheet.Cells(x, 4).Value.ToString();
-                string nombre = a.ActiveWorkbook.ActiveSheet.Cells(x, 5).Value.ToString();
-                string especialidad = a.ActiveWorkbook.ActiveSheet.Cells(x, 6).Value.ToString();
-                string semestre = a.ActiveWorkbook.ActiveSheet.Cells(x, 7).Value.ToString();
-                string servicio = a.ActiveWorkbook.ActiveSheet.Cells(x, 8).Value.ToString();
-                string practicas = a.ActiveWorkbook.ActiveSheet.Cells(x, 9).Value.ToString();
-                string residencias = a.ActiveWorkbook.ActiveSheet.Cells(x, 10).Value.ToString();
-                string certificaciones = a.ActiveWorkbook.ActiveSheet.Cells(x, 11).Value.ToString();
-                string toefl = a.ActiveWorkbook.ActiveSheet.Cells(x, 12).Value.ToString();
-                ListViewItem lista = new ListViewItem(num);
-                if (semestre == sep)
-                {
-                    lista.SubItems.Add(matricula);
-                    lista.SubItems.Add(paterno);
-                    lista.SubItems.Add(materno);
-                    lista.SubItems.Add(nombre);
-                    lista.SubItems.Add(especialidad);
-                    lista.SubItems.Add(semestre);
-                    lista.SubItems.Add(servicio);
-                    lista.SubItems.Add(practicas);
-                    lista.SubItems.Add(residencias);
-                    lista.SubItems.Add(certificaciones);
-                    lista.SubItems.Add(toefl);
-                    lvSemestre.Items.Add(lista);
-                }
-                x++;
-            }
-        }
-
-        private void btn8_Click(object sender, EventArgs e)
-        {
-            lvSemestre.Items.Clear();
-            int x = 6;
-            string o = "8";
-            while (a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value != null)
-            {
-                string num = a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value.ToString();
-                string matricula = a.ActiveWorkbook.ActiveSheet.Cells(x, 2).Value.ToString();
-                string paterno = a.ActiveWorkbook.ActiveSheet.Cells(x, 3).Value.ToString();
-                string materno = a.ActiveWorkbook.ActiveSheet.Cells(x, 4).Value.ToString();
-                string nombre = a.ActiveWorkbook.ActiveSheet.Cells(x, 5).Value.ToString();
-                string especialidad = a.ActiveWorkbook.ActiveSheet.Cells(x, 6).Value.ToString();
-                string semestre = a.ActiveWorkbook.ActiveSheet.Cells(x, 7).Value.ToString();
-                string servicio = a.ActiveWorkbook.ActiveSheet.Cells(x, 8).Value.ToString();
-                string practicas = a.ActiveWorkbook.ActiveSheet.Cells(x, 9).Value.ToString();
-                string residencias = a.ActiveWorkbook.ActiveSheet.Cells(x, 10).Value.ToString();
-                string certificaciones = a.ActiveWorkbook.ActiveSheet.Cells(x, 11).Value.ToString();
-                string toefl = a.ActiveWorkbook.ActiveSheet.Cells(x, 12).Value.ToString();
-                ListViewItem lista = new ListViewItem(num);
-                if (semestre == o)
-                {
-                    lista.SubItems.Add(matricula);
-                    lista.SubItems.Add(paterno);
-                    lista.SubItems.Add(materno);
-                    lista.SubItems.Add(nombre);
-                    lista.SubItems.Add(especialidad);
-                    lista.SubItems.Add(semestre);
-                    lista.SubItems.Add(servicio);
-                    lista.SubItems.Add(practicas);
-                    lista.SubItems.Add(residencias);
-                    lista.SubItems.Add(certificaciones);
-                    lista.SubItems.Add(toefl);
-                    lvSemestre.Items.Add(lista);
-                }
-                x++;
-            }
-        }
-
-        private void btn9_Click(object sender, EventArgs e)
-        {
-            lvSemestre.Items.Clear();
-            int x = 6;
-            string n = "9";
-            while (a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value != null)
-            {
-                string num = a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value.ToString();
-                string matricula = a.ActiveWorkbook.ActiveSheet.Cells(x, 2).Value.ToString();
-                string paterno = a.ActiveWorkbook.ActiveSheet.Cells(x, 3).Value.ToString();
-                string materno = a.ActiveWorkbook.ActiveSheet.Cells(x, 4).Value.ToString();
-                string nombre = a.ActiveWorkbook.ActiveSheet.Cells(x, 5).Value.ToString();
-                string especialidad = a.ActiveWorkbook.ActiveSheet.Cells(x, 6).Value.ToString();
-                string semestre = a.ActiveWorkbook.ActiveSheet.Cells(x, 7).Value.ToString();
-                string servicio = a.ActiveWorkbook.ActiveSheet.Cells(x, 8).Value.ToString();
-                string practicas = a.ActiveWorkbook.ActiveSheet.Cells(x, 9).Value.ToString();
-                string residencias = a.ActiveWorkbook.ActiveSheet.Cells(x, 10).Value.ToString();
-                string certificaciones = a.ActiveWorkbook.ActiveSheet.Cells(x, 11).Value.ToString();
-                string toefl = a.ActiveWorkbook.ActiveSheet.Cells(x, 12).Value.ToString();
-                ListViewItem lista = new ListViewItem(num);
-                if (semestre == n)
-                {
-                    lista.SubItems.Add(matricula);
-                    lista.SubItems.Add(paterno);
-                    lista.SubItems.Add(materno);
-                    lista.SubItems.Add(nombre);
-                    lista.SubItems.Add(especialidad);
-                    lista.SubItems.Add(semestre);
-                    lista.SubItems.Add(servicio);
-                    lista.SubItems.Add(practicas);
-                    lista.SubItems.Add(residencias);
-                    lista.SubItems.Add(certificaciones);
-                    lista.SubItems.Add(toefl);
-                    lvSemestre.Items.Add(lista);
-                }
-                x++;
-            }
-        }
-
-        private void btn10_Click(object sender, EventArgs e)
-        {
-            lvSemestre.Items.Clear();
-            int x = 6;
-            string d = "10";
+            string d = "3";
             while (a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value != null)
             {
                 string num = a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value.ToString();
@@ -421,11 +148,11 @@ namespace LyE2021
             }
         }
 
-        private void btn11_Click(object sender, EventArgs e)
+        private void btn4_Click(object sender, EventArgs e)
         {
             lvSemestre.Items.Clear();
             int x = 6;
-            string on = "11";
+            string f = "4";
             while (a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value != null)
             {
                 string num = a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value.ToString();
@@ -441,7 +168,280 @@ namespace LyE2021
                 string certificaciones = a.ActiveWorkbook.ActiveSheet.Cells(x, 11).Value.ToString();
                 string toefl = a.ActiveWorkbook.ActiveSheet.Cells(x, 12).Value.ToString();
                 ListViewItem lista = new ListViewItem(num);
-                if (semestre == on)
+                if (semestre == f)
+                {
+                    lista.SubItems.Add(matricula);
+                    lista.SubItems.Add(paterno);
+                    lista.SubItems.Add(materno);
+                    lista.SubItems.Add(nombre);
+                    lista.SubItems.Add(especialidad);
+                    lista.SubItems.Add(semestre);
+                    lista.SubItems.Add(servicio);
+                    lista.SubItems.Add(practicas);
+                    lista.SubItems.Add(residencias);
+                    lista.SubItems.Add(certificaciones);
+                    lista.SubItems.Add(toefl);
+                    lvSemestre.Items.Add(lista);
+                }
+                x++;
+            }
+        }
+
+        private void btn5_Click(object sender, EventArgs e)
+        {
+            lvSemestre.Items.Clear();
+            int x = 6;
+            string g = "5";
+            while (a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value != null)
+            {
+                string num = a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value.ToString();
+                string matricula = a.ActiveWorkbook.ActiveSheet.Cells(x, 2).Value.ToString();
+                string paterno = a.ActiveWorkbook.ActiveSheet.Cells(x, 3).Value.ToString();
+                string materno = a.ActiveWorkbook.ActiveSheet.Cells(x, 4).Value.ToString();
+                string nombre = a.ActiveWorkbook.ActiveSheet.Cells(x, 5).Value.ToString();
+                string especialidad = a.ActiveWorkbook.ActiveSheet.Cells(x, 6).Value.ToString();
+                string semestre = a.ActiveWorkbook.ActiveSheet.Cells(x, 7).Value.ToString();
+                string servicio = a.ActiveWorkbook.ActiveSheet.Cells(x, 8).Value.ToString();
+                string practicas = a.ActiveWorkbook.ActiveSheet.Cells(x, 9).Value.ToString();
+                string residencias = a.ActiveWorkbook.ActiveSheet.Cells(x, 10).Value.ToString();
+                string certificaciones = a.ActiveWorkbook.ActiveSheet.Cells(x, 11).Value.ToString();
+                string toefl = a.ActiveWorkbook.ActiveSheet.Cells(x, 12).Value.ToString();
+                ListViewItem lista = new ListViewItem(num);
+                if (semestre == g)
+                {
+                    lista.SubItems.Add(matricula);
+                    lista.SubItems.Add(paterno);
+                    lista.SubItems.Add(materno);
+                    lista.SubItems.Add(nombre);
+                    lista.SubItems.Add(especialidad);
+                    lista.SubItems.Add(semestre);
+                    lista.SubItems.Add(servicio);
+                    lista.SubItems.Add(practicas);
+                    lista.SubItems.Add(residencias);
+                    lista.SubItems.Add(certificaciones);
+                    lista.SubItems.Add(toefl);
+                    lvSemestre.Items.Add(lista);
+                }
+                x++;
+            }
+        }
+
+        private void btn6_Click(object sender, EventArgs e)
+        {
+            lvSemestre.Items.Clear();
+            int x = 6;
+            string h = "6";
+            while (a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value != null)
+            {
+                string num = a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value.ToString();
+                string matricula = a.ActiveWorkbook.ActiveSheet.Cells(x, 2).Value.ToString();
+                string paterno = a.ActiveWorkbook.ActiveSheet.Cells(x, 3).Value.ToString();
+                string materno = a.ActiveWorkbook.ActiveSheet.Cells(x, 4).Value.ToString();
+                string nombre = a.ActiveWorkbook.ActiveSheet.Cells(x, 5).Value.ToString();
+                string especialidad = a.ActiveWorkbook.ActiveSheet.Cells(x, 6).Value.ToString();
+                string semestre = a.ActiveWorkbook.ActiveSheet.Cells(x, 7).Value.ToString();
+                string servicio = a.ActiveWorkbook.ActiveSheet.Cells(x, 8).Value.ToString();
+                string practicas = a.ActiveWorkbook.ActiveSheet.Cells(x, 9).Value.ToString();
+                string residencias = a.ActiveWorkbook.ActiveSheet.Cells(x, 10).Value.ToString();
+                string certificaciones = a.ActiveWorkbook.ActiveSheet.Cells(x, 11).Value.ToString();
+                string toefl = a.ActiveWorkbook.ActiveSheet.Cells(x, 12).Value.ToString();
+                ListViewItem lista = new ListViewItem(num);
+                if (semestre == h)
+                {
+                    lista.SubItems.Add(matricula);
+                    lista.SubItems.Add(paterno);
+                    lista.SubItems.Add(materno);
+                    lista.SubItems.Add(nombre);
+                    lista.SubItems.Add(especialidad);
+                    lista.SubItems.Add(semestre);
+                    lista.SubItems.Add(servicio);
+                    lista.SubItems.Add(practicas);
+                    lista.SubItems.Add(residencias);
+                    lista.SubItems.Add(certificaciones);
+                    lista.SubItems.Add(toefl);
+                    lvSemestre.Items.Add(lista);
+                }
+                x++;
+            }
+        }
+
+        private void btn7_Click(object sender, EventArgs e)
+        {
+            lvSemestre.Items.Clear();
+            int x = 6;
+            string j = "7";
+            while (a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value != null)
+            {
+                string num = a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value.ToString();
+                string matricula = a.ActiveWorkbook.ActiveSheet.Cells(x, 2).Value.ToString();
+                string paterno = a.ActiveWorkbook.ActiveSheet.Cells(x, 3).Value.ToString();
+                string materno = a.ActiveWorkbook.ActiveSheet.Cells(x, 4).Value.ToString();
+                string nombre = a.ActiveWorkbook.ActiveSheet.Cells(x, 5).Value.ToString();
+                string especialidad = a.ActiveWorkbook.ActiveSheet.Cells(x, 6).Value.ToString();
+                string semestre = a.ActiveWorkbook.ActiveSheet.Cells(x, 7).Value.ToString();
+                string servicio = a.ActiveWorkbook.ActiveSheet.Cells(x, 8).Value.ToString();
+                string practicas = a.ActiveWorkbook.ActiveSheet.Cells(x, 9).Value.ToString();
+                string residencias = a.ActiveWorkbook.ActiveSheet.Cells(x, 10).Value.ToString();
+                string certificaciones = a.ActiveWorkbook.ActiveSheet.Cells(x, 11).Value.ToString();
+                string toefl = a.ActiveWorkbook.ActiveSheet.Cells(x, 12).Value.ToString();
+                ListViewItem lista = new ListViewItem(num);
+                if (semestre == j)
+                {
+                    lista.SubItems.Add(matricula);
+                    lista.SubItems.Add(paterno);
+                    lista.SubItems.Add(materno);
+                    lista.SubItems.Add(nombre);
+                    lista.SubItems.Add(especialidad);
+                    lista.SubItems.Add(semestre);
+                    lista.SubItems.Add(servicio);
+                    lista.SubItems.Add(practicas);
+                    lista.SubItems.Add(residencias);
+                    lista.SubItems.Add(certificaciones);
+                    lista.SubItems.Add(toefl);
+                    lvSemestre.Items.Add(lista);
+                }
+                x++;
+            }
+        }
+
+        private void btn8_Click(object sender, EventArgs e)
+        {
+            lvSemestre.Items.Clear();
+            int x = 6;
+            string k = "8";
+            while (a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value != null)
+            {
+                string num = a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value.ToString();
+                string matricula = a.ActiveWorkbook.ActiveSheet.Cells(x, 2).Value.ToString();
+                string paterno = a.ActiveWorkbook.ActiveSheet.Cells(x, 3).Value.ToString();
+                string materno = a.ActiveWorkbook.ActiveSheet.Cells(x, 4).Value.ToString();
+                string nombre = a.ActiveWorkbook.ActiveSheet.Cells(x, 5).Value.ToString();
+                string especialidad = a.ActiveWorkbook.ActiveSheet.Cells(x, 6).Value.ToString();
+                string semestre = a.ActiveWorkbook.ActiveSheet.Cells(x, 7).Value.ToString();
+                string servicio = a.ActiveWorkbook.ActiveSheet.Cells(x, 8).Value.ToString();
+                string practicas = a.ActiveWorkbook.ActiveSheet.Cells(x, 9).Value.ToString();
+                string residencias = a.ActiveWorkbook.ActiveSheet.Cells(x, 10).Value.ToString();
+                string certificaciones = a.ActiveWorkbook.ActiveSheet.Cells(x, 11).Value.ToString();
+                string toefl = a.ActiveWorkbook.ActiveSheet.Cells(x, 12).Value.ToString();
+                ListViewItem lista = new ListViewItem(num);
+                if (semestre == k)
+                {
+                    lista.SubItems.Add(matricula);
+                    lista.SubItems.Add(paterno);
+                    lista.SubItems.Add(materno);
+                    lista.SubItems.Add(nombre);
+                    lista.SubItems.Add(especialidad);
+                    lista.SubItems.Add(semestre);
+                    lista.SubItems.Add(servicio);
+                    lista.SubItems.Add(practicas);
+                    lista.SubItems.Add(residencias);
+                    lista.SubItems.Add(certificaciones);
+                    lista.SubItems.Add(toefl);
+                    lvSemestre.Items.Add(lista);
+                }
+                x++;
+            }
+        }
+
+        private void btn9_Click(object sender, EventArgs e)
+        {
+            lvSemestre.Items.Clear();
+            int x = 6;
+            string l = "9";
+            while (a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value != null)
+            {
+                string num = a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value.ToString();
+                string matricula = a.ActiveWorkbook.ActiveSheet.Cells(x, 2).Value.ToString();
+                string paterno = a.ActiveWorkbook.ActiveSheet.Cells(x, 3).Value.ToString();
+                string materno = a.ActiveWorkbook.ActiveSheet.Cells(x, 4).Value.ToString();
+                string nombre = a.ActiveWorkbook.ActiveSheet.Cells(x, 5).Value.ToString();
+                string especialidad = a.ActiveWorkbook.ActiveSheet.Cells(x, 6).Value.ToString();
+                string semestre = a.ActiveWorkbook.ActiveSheet.Cells(x, 7).Value.ToString();
+                string servicio = a.ActiveWorkbook.ActiveSheet.Cells(x, 8).Value.ToString();
+                string practicas = a.ActiveWorkbook.ActiveSheet.Cells(x, 9).Value.ToString();
+                string residencias = a.ActiveWorkbook.ActiveSheet.Cells(x, 10).Value.ToString();
+                string certificaciones = a.ActiveWorkbook.ActiveSheet.Cells(x, 11).Value.ToString();
+                string toefl = a.ActiveWorkbook.ActiveSheet.Cells(x, 12).Value.ToString();
+                ListViewItem lista = new ListViewItem(num);
+                if (semestre == l)
+                {
+                    lista.SubItems.Add(matricula);
+                    lista.SubItems.Add(paterno);
+                    lista.SubItems.Add(materno);
+                    lista.SubItems.Add(nombre);
+                    lista.SubItems.Add(especialidad);
+                    lista.SubItems.Add(semestre);
+                    lista.SubItems.Add(servicio);
+                    lista.SubItems.Add(practicas);
+                    lista.SubItems.Add(residencias);
+                    lista.SubItems.Add(certificaciones);
+                    lista.SubItems.Add(toefl);
+                    lvSemestre.Items.Add(lista);
+                }
+                x++;
+            }
+        }
+
+        private void btn10_Click(object sender, EventArgs e)
+        {
+            lvSemestre.Items.Clear();
+            int x = 6;
+            string m = "10";
+            while (a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value != null)
+            {
+                string num = a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value.ToString();
+                string matricula = a.ActiveWorkbook.ActiveSheet.Cells(x, 2).Value.ToString();
+                string paterno = a.ActiveWorkbook.ActiveSheet.Cells(x, 3).Value.ToString();
+                string materno = a.ActiveWorkbook.ActiveSheet.Cells(x, 4).Value.ToString();
+                string nombre = a.ActiveWorkbook.ActiveSheet.Cells(x, 5).Value.ToString();
+                string especialidad = a.ActiveWorkbook.ActiveSheet.Cells(x, 6).Value.ToString();
+                string semestre = a.ActiveWorkbook.ActiveSheet.Cells(x, 7).Value.ToString();
+                string servicio = a.ActiveWorkbook.ActiveSheet.Cells(x, 8).Value.ToString();
+                string practicas = a.ActiveWorkbook.ActiveSheet.Cells(x, 9).Value.ToString();
+                string residencias = a.ActiveWorkbook.ActiveSheet.Cells(x, 10).Value.ToString();
+                string certificaciones = a.ActiveWorkbook.ActiveSheet.Cells(x, 11).Value.ToString();
+                string toefl = a.ActiveWorkbook.ActiveSheet.Cells(x, 12).Value.ToString();
+                ListViewItem lista = new ListViewItem(num);
+                if (semestre == m)
+                {
+                    lista.SubItems.Add(matricula);
+                    lista.SubItems.Add(paterno);
+                    lista.SubItems.Add(materno);
+                    lista.SubItems.Add(nombre);
+                    lista.SubItems.Add(especialidad);
+                    lista.SubItems.Add(semestre);
+                    lista.SubItems.Add(servicio);
+                    lista.SubItems.Add(practicas);
+                    lista.SubItems.Add(residencias);
+                    lista.SubItems.Add(certificaciones);
+                    lista.SubItems.Add(toefl);
+                    lvSemestre.Items.Add(lista);
+                }
+                x++;
+            }
+        }
+
+        private void btn11_Click(object sender, EventArgs e)
+        {
+            lvSemestre.Items.Clear();
+            int x = 6;
+            string n = "11";
+            while (a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value != null)
+            {
+                string num = a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value.ToString();
+                string matricula = a.ActiveWorkbook.ActiveSheet.Cells(x, 2).Value.ToString();
+                string paterno = a.ActiveWorkbook.ActiveSheet.Cells(x, 3).Value.ToString();
+                string materno = a.ActiveWorkbook.ActiveSheet.Cells(x, 4).Value.ToString();
+                string nombre = a.ActiveWorkbook.ActiveSheet.Cells(x, 5).Value.ToString();
+                string especialidad = a.ActiveWorkbook.ActiveSheet.Cells(x, 6).Value.ToString();
+                string semestre = a.ActiveWorkbook.ActiveSheet.Cells(x, 7).Value.ToString();
+                string servicio = a.ActiveWorkbook.ActiveSheet.Cells(x, 8).Value.ToString();
+                string practicas = a.ActiveWorkbook.ActiveSheet.Cells(x, 9).Value.ToString();
+                string residencias = a.ActiveWorkbook.ActiveSheet.Cells(x, 10).Value.ToString();
+                string certificaciones = a.ActiveWorkbook.ActiveSheet.Cells(x, 11).Value.ToString();
+                string toefl = a.ActiveWorkbook.ActiveSheet.Cells(x, 12).Value.ToString();
+                ListViewItem lista = new ListViewItem(num);
+                if (semestre == n)
                 {
                     lista.SubItems.Add(matricula);
                     lista.SubItems.Add(paterno);
@@ -464,7 +464,7 @@ namespace LyE2021
         {
             lvSemestre.Items.Clear();
             int x = 6;
-            string doce = "12";
+            string o = "12";
             while (a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value != null)
             {
                 string num = a.ActiveWorkbook.ActiveSheet.Cells(x, 1).Value.ToString();
@@ -480,7 +480,7 @@ namespace LyE2021
                 string certificaciones = a.ActiveWorkbook.ActiveSheet.Cells(x, 11).Value.ToString();
                 string toefl = a.ActiveWorkbook.ActiveSheet.Cells(x, 12).Value.ToString();
                 ListViewItem lista = new ListViewItem(num);
-                if (semestre == doce)
+                if (semestre == o)
                 {
                     lista.SubItems.Add(matricula);
                     lista.SubItems.Add(paterno);
